@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+
+//TUGAS VARIABLE GLOBAL
+
+int m = 21;
+int ContohFunction1 () 
+{
+	int m = 23;
+	return m;
+}
+
+int n = 22;
+int ContohFunction2 ()
+{
+	int n = 33;
+	return n;	
+}
+
+int o = 44;
+int ContohFunction3 ()
+{
+	int o = 55;
+	return o;
+}
+int main ()
+{
+	cout << "TUGAS VARIABLE GLOBAL,M FATIH A" << endl;
+	cout << "Ini tampilan dari Variable global:" <<endl;
+	cout << "Ini variable global 1 adalah " << m << endl;
+	cout << "Ini variable global dari fungsi ContohFunction1 adalah " << ContohFunction1 ();
+	cout << endl;
+	
+	cout << "Ini variable global 2 adalah " << n << endl;
+	cout << "Ini variable global dari fungsi ContohFunction2 adalah " << ContohFunction2 ();
+	cout << endl;
+	
+	cout << "Ini variable global 3 adalah " << o << endl;
+	cout << "Ini variable global dari fungsi ContohFunction3 adalah " << ContohFunction3 ();
+	cout << endl;
+}

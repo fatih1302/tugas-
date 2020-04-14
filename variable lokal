@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+//Tugas variable lokal Fatih
+
+int contohFunction () 
+{
+	int n = 22;
+	return n;
+	//Variable di hancurkan/Di hapus dari alamat memori
+}
+
+int contohFunction2 ()
+{
+	int m = 44;
+	return m;
+	//Variable di hancurkan/Di hapus dari alamat memori
+}
+
+
+int main ()
+{
+	int n = 4;
+	cout << "ini variable lokal dari fungsi utama " << n << endl;
+	cout << " ini variable lokal  dari fungsi contohFunction " << contohFunction ();
+	cout << endl;
+	int m = 6;
+	cout << "ini variable lokal dari fungsi utama " << n << endl;
+	cout << " ini variable lokal  dari fungsi contohFunction " << contohFunction2 ();
+	cout << endl;
+}
